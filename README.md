@@ -9,9 +9,9 @@ $ npm install axios
 $ git init
 $ git add .
 $ git commit -m "first commit"
-$ git branch -M v1_express
+$ git branch -M v2_axios
 $ git remote add origin https://github.com/bizzy91/proverload.git
-$ git push -u origin v1_express
+$ git push -u origin v2_axios
 ```
 ## 할 일
 [
