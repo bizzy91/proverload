@@ -13,4 +13,5 @@ con.connect(function(err) {
         if (err) throw err;
         console.log('database created!');
       })
+  con.end();
 })

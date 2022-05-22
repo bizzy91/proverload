@@ -8,10 +8,9 @@ const con = mysql.createConnection({
 })
 
 const create_table = '\
-CREATE TABLE users {\
+CREATE TABLE users (\
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, \
-name VARCHAR(255) NOT NULL, \
-email VARCHAR(255) NOT NULL\
+name VARCHAR(255) NOT NULL\
 )'
 
 // console.log(create_table)
@@ -22,4 +21,5 @@ con.connect(function(err) {
           if (err) throw err;
           console.log('table created!');
         })
+    con.end();
   })
