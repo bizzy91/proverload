@@ -13,19 +13,52 @@ $ git branch -M v2_axios
 $ git remote add origin https://github.com/bizzy91/proverload.git
 $ git push -u origin v2_axios
 ```
-## 할 일
+## 진행 상황
+```
+const example_data = 
 [
     {
         id: 0,
-        name: "bizzy"
-    }
+        name: "bizzy0",
+    },
+    {
+        id: 1,
+        name: "bizzy1",
+    },
+    {
+        id: 2,
+        name: "bizzy2",
+    },
 ]
-
-
+```
 POST /create
-
+```
+let id = req.body.id
+let name = req.body.name
+example_data.push({
+    id: id,
+    name: name
+})
+console.log(example_data)
+```
 GET /read
+```
+console.log(example_data)
+```
 
-PUT /update
+POST /update
+```
+let id = req.body.id
+let name = req.body.name
+example_data[id] = {
+    id: id,
+    name: name
+})
+console.log(example_data)
+```
 
-DELETE /delete
+GET /delete
+```
+example_data.pop()
+console.log(example_data)
+```
