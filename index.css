@@ -1,0 +1,45 @@
+select {
+    display: inline-block;
+    width: 120px;
+    border: 1px solid #999;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #999;
+}
+
+.table {
+    width: 60%;
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;  
+  }
+table thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #369;
+    border-bottom: 3px solid #036;
+}
+table tbody th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #f3f6f7;
+}
+table td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody tr:hover {
+    background-color: rgb(50,50,50,0.1);
+}
+

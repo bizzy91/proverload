@@ -2,28 +2,21 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-
-// CREATE
-app.get('/create', (req, res) => {
-    res.send('This is CREATE page.')
-  })
-// READ
-app.get('/read', (req, res) => {
-  res.send('This is READ page.')
-})
-// UPDATE
-app.get('/update', (req, res) => {
-  res.send('This is UPDATE page.')
-})
-// DELETE
-app.get('/delete', (req, res) => {
-  res.send('This is DELETE page.')
-})
+// 
+app.use(express.urlencoded({extended: true}))
+// JSON
+app.use(express.json())
+// CORS
+const cors = require('cors')
+app.use(cors())
 
 app.get('/', (req, res) => {
-  res.send('This is Home!')
+  res.send('Hello World!')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.post('/result', (req, res) => {
+    const data = req.body
+    console.log(data)
 })
+
+app.listen(port, () => { console.log(`Example app listening on port ${port}`) })

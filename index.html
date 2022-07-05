@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<input type="text" class="test">
+<button onclick="Add()">추가</button>
+<select id="Exercise" onchange="Selected()">
+    <option value="Bench Press">Bench Press</option>
+    <option value="Squat">Squat</option>
+    <option value="Deadlift">Deadlift</option>
+</select>
+<!-- 테이블 -->
+<div>
+    <table class="table">
+        <thead>
+        <th><button class="btn">Add Set</button></th>
+        <th>#</th>
+        <th>Exercise</th>
+        <th>Weights</th>
+        <th>Reps</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td><button class="btn-delete">-</button></td>
+            <td>1</td>
+            <td></td>
+            <td><input class="weights"></td>
+            <td><input class="reps"></td>
+        </tr>
+        <tr>
+            <td><button class="btn-delete">-</button></td>
+            <td>2</td>
+            <td></td>
+            <td><input class="weights"></td>
+            <td><input class="reps"></td>
+        </tr>
+        <tr>
+            <td><button class="btn-delete">-</button></td>
+            <td>3</td>
+            <td></td>
+            <td><input class="weights"></td>
+            <td><input class="reps"></td>
+        </tr>
+        </tbody>
+    </table>    
+</div>
+
+<button class="submit">Submit</button>    
+</body>
+<script src="./index.js"></script>
+</html>
